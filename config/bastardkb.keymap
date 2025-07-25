@@ -34,19 +34,19 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W       &kp F        &kp P        &kp B                                    &kp J         &kp L        &kp U        &kp Y         &kp SQT
-&hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                    &kp M         &hm LSHFT N  &hm LCTRL E  &hm LALT I    &hm LGUI O
-&kp Z       &hm RALT X  &kp C        &kp D        &kp V                                    &kp K         &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH
-                                     &lt MED ESC  &lt NAV SPACE  &lt MOU TAB  &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
+&kp Q       &kp W       &kp F        &kp P        &kp B                                     &kp J        &kp L        &kp U        &kp Y         &kp SQT
+&hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                     &kp M        &hm LSHFT N  &hm LCTRL E  &hm LALT I    &hm LGUI O
+&kp Z       &hm RALT X  &kp C        &kp D        &kp V                                     &kp K        &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH
+                                     &lt MED ESC  &lt NAV SPACE  &lt MOU TAB  &lt SYM BSPC  &lt NUM RET  &lt FUN DEL
             >;
         };
 
         nav_layer {
             bindings = <
-&none     &none     &kp LC(F)  &none      &none                   &kp LC(Y)  &kp LC(V)  &kp LC(C)       &kp LC(X)     &kp LC(Z)
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                   &kp CAPS   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&none     &none     &none      &none      &none                   &kp INS    &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-                               &none      &trans  &none  &kp RET  &kp BSPC   &kp DEL
+&none     &none     &kp LC(F)  &none      &none                    &kp LC(Y)  &kp LC(V)  &kp LC(C)       &kp LC(X)     &kp LC(Z)
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                    &kp CAPS   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&none     &none     &none      &none      &none                    &kp INS    &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+                               &none      &trans  &none  &kp BSPC  &kp RET    &kp DEL
             >;
         };
 
