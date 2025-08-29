@@ -63,7 +63,6 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
-            retro-tap;
         };
     };
 
@@ -73,7 +72,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W        &kp F         &kp P              &kp B                                    &kp J         &kp L              &kp U         &kp Y        &kp SQT
-&ht_gui LGUI A  &htl LALT R  &htl LCTRL S  &hold_tap LSHFT T  &kp G                                    &kp M         &hold_tap LSHFT N  &htl LCTRL E  &htl LALT I  &ht_gui LGUI O
+&ht_gui LGUI A  &htl LALT R  &htl LCTRL S  &hold_tap LSHFT T  &kp G                                    &kp M         &hold_tap RSHFT N  &htl RCTRL E  &htl RALT I  &ht_gui RGUI O
 &kp Z           &kp X        &kp C         &kp D              &kp V                                    &kp K         &kp H              &kp COMMA     &kp PERIOD   &kp FSLH
                                            &lt MED ESC        &lt NAV SPACE  &lt MOU TAB  &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
             >;
