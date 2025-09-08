@@ -25,6 +25,8 @@
             tapping-term-ms = <120>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <160>;
         };
 
         htl: htl {
