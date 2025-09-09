@@ -27,6 +27,7 @@
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <160>;
+            retro-tap;
         };
 
         htl: htl {
@@ -38,6 +39,7 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             quick-tap-ms = <200>;
+            retro-tap;
         };
 
         html: html {
@@ -61,6 +63,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
+            retro-tap;
         };
     };
 
