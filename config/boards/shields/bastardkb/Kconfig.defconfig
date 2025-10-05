@@ -9,7 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_USB
 	default y
 
-endifh
+endif
 
 if SHIELD_BASTARDKB_LEFT || SHIELD_BASTARDKB_RIGHT
 
