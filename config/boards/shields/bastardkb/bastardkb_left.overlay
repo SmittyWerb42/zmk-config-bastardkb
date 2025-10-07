@@ -76,10 +76,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_xy_scaler 1 2>, <&zip_temp_layer 6 400>; // Switch to auto-mouse temp layer, decrease sensitivity
-        scroll {
-            layers = <6>; // SCROLL
-            input-processors = <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
-        };
+        //scroll {
+        //    layers = <6>; // SCROLL
+        //    input-processors = <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
+        //};
     };
 
 };
