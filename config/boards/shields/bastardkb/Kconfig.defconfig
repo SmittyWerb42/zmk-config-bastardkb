@@ -1,7 +1,7 @@
 # if SHIELD_BASTARDKB_LEFT
 if SHIELD_BASTARDKB_RIGHT
 config ZMK_KEYBOARD_NAME
-    default "bastardkb_auryn"
+    default "bastardkb_charybdis"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -9,6 +9,11 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_USB
 	default y
 
+config ZMK_POINTING
+    default y
+
+config SPI
+    default y
 endif
 
 if SHIELD_BASTARDKB_LEFT || SHIELD_BASTARDKB_RIGHT
