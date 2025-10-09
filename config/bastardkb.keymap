@@ -70,7 +70,7 @@
             bindings = <
 &kp Q           &kp W        &kp F         &kp P              &kp B                              &kp J       &kp L              &kp U         &kp Y         &kp SQT
 &ht_gui LGUI A  &htl LALT R  &htl LCTRL S  &hold_tap LSHFT T  &kp G                              &kp M       &hold_tap RSHFT N  &htl RCTRL E  &htl RALT I   &ht_gui RGUI O
-&lt 7 Z         &lt 7 X      &lt 7 C       &kp D              &kp V                              &kp K       &kp H              &lt 7 COMMA   &lt 7 PERIOD  &lt 7 SLASH
+&lt 7 Z         &lt 8 X      &lt 9 C       &kp D              &kp V                              &kp K       &kp H              &lt 9 COMMA   &lt 8 PERIOD  &lt 7 SLASH
                                                               &lt 1 SPACE  &lt 5 TAB  &lt 2 RET  &lt 3 BSPC  &lt 4 ESC
             >;
         };
