@@ -73,10 +73,18 @@
 };
 
 / {
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <125>;
+    };
+};
+
+  {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 10 500>; // Switch to auto-mouse temp layer, decrease sensitivity
+        input-processors = <&zip_temp_layer 10 30>; // Switch to auto-mouse temp layer, decrease sensitivity
         scroll {
             layers = <8>; // SCROLL
             input-processors = <&zip_x_scaler 1 16>, <&zip_y_scaler 1 16>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>;
