@@ -144,19 +144,19 @@
 
         scroll_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans
+&none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+&mo 7     &trans    &mo 9      &none      &none                            &none      &none      &mo 9      &trans    &mo 7
+                                          &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
 
         snipe_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans
+&none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+&mo 7     &mo 8     &trans     &none      &none                            &none      &none      &trans     &mo 8     &mo 7
+                                          &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
     };
