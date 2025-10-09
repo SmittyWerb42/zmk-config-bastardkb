@@ -155,6 +155,15 @@
                                           &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
+
+        auto_mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                     &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                     &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                     &trans     &trans     &trans  &trans  &trans
+                                &trans  &trans  &mkp RCLK  &mkp LCLK  &mkp MCLK
+            >;
+        };
     };
 };
 
