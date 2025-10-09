@@ -11,11 +11,6 @@
 // (https://github.com/manna-harbour/miryoku).
 // Customize on your own on the config folder.
 
-&lt {
-    quick-tap-ms = <160>;
-    tapping-term-ms = <180>;
-};
-
 / {
     behaviors {
         hold_tap: hold_tap {
@@ -52,6 +47,7 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             retro-tap;
+            hold-trigger-key-positions = <11 12>;
         };
 
         ht_gui: ht_gui {
