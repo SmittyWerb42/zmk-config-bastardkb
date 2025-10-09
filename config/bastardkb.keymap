@@ -11,6 +11,11 @@
 // (https://github.com/manna-harbour/miryoku).
 // Customize on your own on the config folder.
 
+&lt {
+    quick-tap-ms = <160>;
+    tapping-term-ms = <180>;
+};
+
 / {
     behaviors {
         hold_tap: hold_tap {
@@ -67,9 +72,9 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W        &kp F         &kp P              &kp B                              &kp J       &kp L              &kp U         &kp Y        &kp SQT
-&ht_gui LGUI A  &htl LALT R  &htl LCTRL S  &hold_tap LSHFT T  &kp G                              &kp M       &hold_tap RSHFT N  &htl RCTRL E  &htl RALT I  &ht_gui RGUI O
-&kp Z           &kp X        &kp C         &kp D              &kp V                              &kp K       &kp H              &kp COMMA     &kp PERIOD   &kp FSLH
+&kp Q           &kp W        &kp F         &kp P              &kp B                              &kp J       &kp L              &kp U         &kp Y         &kp SQT
+&ht_gui LGUI A  &htl LALT R  &htl LCTRL S  &hold_tap LSHFT T  &kp G                              &kp M       &hold_tap RSHFT N  &htl RCTRL E  &htl RALT I   &ht_gui RGUI O
+&lt 7 Z         &lt 7 X      &lt 7 C       &kp D              &kp V                              &kp K       &kp H              &lt 7 COMMA   &lt 7 PERIOD  &lt 7 SLASH
                                                               &lt 1 SPACE  &lt 5 TAB  &lt 2 RET  &lt 3 BSPC  &lt 4 ESC
             >;
         };
@@ -130,9 +135,9 @@
 
         mouse_layer {
             bindings = <
-&none     &none     &none      &none      &none                            &kp LC(Y)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp LCTRL  &kp RALT   &kp RGUI
-&trans    &mo 8     &mo 9      &none      &none                            &none      &none      &mo 9      &mo 8      &trans
+&none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp LCTRL  &kp RALT  &kp RGUI
+&trans    &mo 8     &mo 9      &none      &none                            &none      &none      &mo 9      &mo 8     &trans
                                           &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
