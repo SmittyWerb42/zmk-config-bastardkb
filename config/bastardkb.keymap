@@ -13,7 +13,7 @@
 
 / {
     behaviors {
-        hold_tap_lh: hold_tap_lh {
+        ht_lh: hold_tap_lh {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LH";
             #binding-cells = <2>;
@@ -65,7 +65,7 @@
             retro-tap;
         };
 
-        hold_tap_rh: hold_tap_rh {
+        ht_rh: hold_tap_rh {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_RH";
             #binding-cells = <2>;
@@ -86,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W        &kp F         &kp P                 &kp B                              &kp J       &kp L                 &kp U         &kp Y         &kp SQT
-&ht_gui LGUI A  &htl LALT R  &htl LCTRL S  &hold_tap_lh LSHFT T  &kp G                              &kp M       &hold_tap_rh RSHFT N  &htl RCTRL E  &htl RALT I   &ht_gui RGUI O
-&lt 7 Z         &lt 8 X      &lt 9 C       &kp D                 &kp V                              &kp K       &kp H                 &lt 9 COMMA   &lt 8 PERIOD  &lt 7 SLASH
-                                                                 &lt 1 SPACE  &lt 5 TAB  &lt 2 RET  &lt 3 BSPC  &lt 4 ESC
+&kp Q          &kp W          &kp F           &kp P           &kp B                              &kp J       &kp L           &kp U           &kp Y          &kp SQT
+&ht_lh LGUI A  &ht_lh LALT R  &ht_lh LCTRL S  &ht_lh LSHFT T  &kp G                              &kp M       &ht_rh RSHFT N  &ht_rh RCTRL E  &ht_rh RALT I  &ht_rh RGUI O
+&lt 7 Z        &lt 8 X        &lt 9 C         &kp D           &kp V                              &kp K       &kp H           &lt 9 COMMA     &lt 8 PERIOD   &lt 7 SLASH
+                                                              &lt 1 SPACE  &lt 5 TAB  &lt 2 RET  &lt 3 BSPC  &lt 4 ESC
             >;
         };
 
