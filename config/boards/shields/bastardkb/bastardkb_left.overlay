@@ -84,14 +84,14 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 10 300>; // Switch to auto-mouse temp layer, decrease sensitivity
+        input-processors = <&zip_xy_scaler 3 1>, <&zip_temp_layer 10 300>; // Switch to auto-mouse temp layer, decrease sensitivity
         scroll {
             layers = <8>; // SCROLL
             input-processors = <&zip_x_scaler 1 16>, <&zip_y_scaler 1 16>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>;
         };
         snipe {
-            layers = <9>;
-            input-processors = <&zip_xy_scaler 3 1>;
+            layers = <7>;
+            input-processors = <&zip_xy_scaler 1 1>;
         };
     };
 
