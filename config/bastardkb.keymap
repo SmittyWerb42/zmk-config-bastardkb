@@ -11,6 +11,8 @@
 // (https://github.com/manna-harbour/miryoku).
 // Customize on your own on the config folder.
 
+&caps_word { continue-list = <BACKSPACE DELETE>; };
+
 / {
     behaviors {
         ht_lh: hold_tap_lh {
@@ -88,7 +90,7 @@
             bindings = <
 &kp Q          &kp W          &kp F           &kp P           &kp B                              &kp J       &kp L           &kp U           &kp Y          &kp SQT
 &ht_lh LGUI A  &ht_lh LALT R  &ht_lh LCTRL S  &ht_lh LSHFT T  &kp G                              &kp M       &ht_rh RSHFT N  &ht_rh RCTRL E  &ht_rh RALT I  &ht_rh RGUI O
-&lt 7 Z        &lt 8 X        &lt 9 C         &lt 10 D        &kp V                              &kp K       &lt 10 H        &lt 9 COMMA     &lt 8 PERIOD   &lt 7 SLASH
+&lt 7 Z        &kp X          &kp C           &kp D           &kp V                              &kp K       &kp H           &kp COMMA       &kp PERIOD     &lt 7 SLASH
                                                               &lt 1 SPACE  &lt 5 TAB  &lt 2 RET  &lt 3 BSPC  &lt 4 ESC
             >;
         };
@@ -104,9 +106,9 @@
 
         sym_layer {
             bindings = <
-&kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                     &none  &none      &none      &none     &none
-&kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                     &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                     &none  &kp BSPC   &kp COMMA  &kp DOT   &kp SLASH
+&kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                     &none  &none      &none      &sys_reset  &bootloader
+&kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                     &none  &kp RSHFT  &kp RCTRL  &kp RALT    &kp RGUI
+&kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                     &none  &kp BSPC   &kp COMMA  &kp DOT     &kp SLASH
                                            &kp RPAR  &kp UNDER  &trans  &none  &none
             >;
         };
@@ -122,9 +124,9 @@
 
         fun_layer {
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN                        &none  &none      &none      &sys_reset  &bootloader
-&kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK                         &none  &kp RSHFT  &kp RCTRL  &kp RALT    &kp RGUI
-&kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                  &none  &kp K_APP  &none      &none       &none
+&kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN                        &none  &none      &none      &none     &none
+&kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK                         &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+&kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                  &none  &kp K_APP  &none      &none     &none
                                  &kp SPACE        &kp TAB  &none  &none  &trans
             >;
         };
