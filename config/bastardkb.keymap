@@ -226,13 +226,13 @@
 
         Game_Layer {
             bindings = <&to 6>;
-            key-positions = <29 34>;
+            key-positions = <30 33>;
             layers = <0>;
         };
 
         Base_Layer {
             bindings = <&to 0>;
-            key-positions = <19 34>;
+            key-positions = <30 33>;
             layers = <6>;
         };
 
