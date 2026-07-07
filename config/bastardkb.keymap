@@ -228,12 +228,14 @@
             bindings = <&to 6>;
             key-positions = <35 30 33>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         Base_Layer {
             bindings = <&to 0>;
             key-positions = <35 33 30>;
             layers = <6>;
+            timeout-ms = <50>;
         };
 
         caps_word {
