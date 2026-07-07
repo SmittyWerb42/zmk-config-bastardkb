@@ -226,7 +226,7 @@
 
         Game_Layer {
             bindings = <&to 6>;
-            key-positions = <30 33>;
+            key-positions = <34 29>;
             layers = <0>;
         };
 
