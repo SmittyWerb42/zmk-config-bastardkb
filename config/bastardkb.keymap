@@ -225,7 +225,7 @@
         };
 
         Game_Layer {
-            bindings = <&to 6>;
+            bindings = <&kp A>;
             key-positions = <35 29 34>;
         };
 
