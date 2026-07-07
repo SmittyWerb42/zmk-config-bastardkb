@@ -90,7 +90,7 @@
             bindings = <
 &kp Q          &kp W          &kp F           &kp P           &kp B                              &kp J       &kp L           &kp U           &kp Y          &kp SQT
 &ht_lh LGUI A  &ht_lh LALT R  &ht_lh LCTRL S  &ht_lh LSHFT T  &kp G                              &kp M       &ht_rh RSHFT N  &ht_rh RCTRL E  &ht_rh RALT I  &ht_rh RGUI O
-&lt 7 Z        &lt 8 X        &lt 9 C         &lt 10 D        &kp V                              &kp K       &lt 10 H        &lt 9 COMMA     &lt 8 PERIOD   &lt 7 SLASH
+&lt 12 Z       &lt 13 X       &lt 9 C         &lt 10 D        &kp V                              &kp K       &lt 10 H        &lt 9 COMMA     &lt 8 PERIOD   &lt 7 SLASH
                                                               &lt 1 SPACE  &lt 5 TAB  &lt 2 RET  &lt 3 BSPC  &lt 4 ESC
             >;
         };
@@ -149,20 +149,20 @@
             >;
         };
 
-        mouse_layer {
+        mouse_layer_RH {
             bindings = <
 &none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp LCTRL  &kp RALT  &kp RGUI
-&trans    &mo 8     &mo 9      &mo 10     &none                            &none      &mo 10     &mo 9      &mo 8     &trans
+&trans    &mo 13    &mo 9      &mo 10     &none                            &none      &mo 10     &mo 9      &mo 8     &trans
                                           &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
 
-        scroll_layer {
+        scroll_layer_RH {
             bindings = <
 &none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&mo 7     &trans    &mo 9      &mo 10     &none                            &none      &mo 10     &mo 9      &trans    &mo 7
+&mo 12    &trans    &mo 9      &mo 10     &none                            &none      &mo 10     &mo 9      &trans    &mo 7
                                           &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
@@ -171,7 +171,7 @@
             bindings = <
 &none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&mo 7     &mo 8     &trans     &mo 10     &none                            &none      &mo 10     &trans     &mo 8     &mo 7
+&mo 12    &mo 13    &trans     &mo 10     &none                            &none      &mo 10     &trans     &mo 8     &mo 7
                                           &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
@@ -180,7 +180,7 @@
             bindings = <
 &none     &none     &none      &none      &none                            &none      &none      &none      &none     &none
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-&mo 7     &mo 8     &mo 9      &trans     &none                            &none      &trans     &mo 9      &mo 8     &mo 7
+&mo 12    &mo 13    &mo 9      &trans     &none                            &none      &trans     &mo 9      &mo 8     &mo 7
                                           &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
@@ -191,6 +191,24 @@
 &trans  &trans  &trans  &trans  &trans                     &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                     &trans     &trans     &trans  &trans  &trans
                                 &trans  &trans  &mkp RCLK  &mkp LCLK  &mkp MCLK
+            >;
+        };
+
+        mouse_layer_LH {
+            bindings = <
+&none     &none     &none      &none      &none                            &none      &none           &none           &none         &none
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&trans    &mo 8     &mo 9      &mo 10     &none                            &none      &mo 10          &mo 9           &mo 8         &trans
+                                          &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
+            >;
+        };
+
+        scroll_layer_LH {
+            bindings = <
+&none     &none     &none      &none      &none                            &none      &none           &none           &none         &none
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                            &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&mo 12    &trans    &mo 9      &mo 10     &none                            &none      &mo 10          &mo 9           &trans        &mo 7
+                                          &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK
             >;
         };
     };
